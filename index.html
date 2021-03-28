@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie databases</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Movie database</h1>
+    <div class="slider">
+      <input type="range" min="1980" max="2020" id="slider" />Year
+      <span id="year"></span>
+    </div>
+    <label for="search-bar">
+      <input type="text" class="search-bar" />
+      <ul class="auto-complete"></ul>
+    </label>
+    <select id="genre_select"></select>
+    <table id="movie_table" width="100%" class="table table-bordered">
+      <tr>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Year</th>
+      </tr>
+    </table>
+    <form action="#" onsubmit="getMovieInfo">
+      <fieldset>
+        <legend>Manage Movie</legend>
+        <label for="name" class="form-control">Movie name</label>
+        <input type="text" id="name" class="form-control" />
+        <button class="btn btn-outline-success">Add Movie</button>
+        <button class="btn btn-outline-info">Change Date</button>
+        <button class="btn btn-outline-danger">Delete Movie</button>
+      </fieldset>
+    </form>
+    <script src="dist/main.js"></script>
+  </body>
+</html>
